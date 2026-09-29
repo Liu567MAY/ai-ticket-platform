@@ -1,0 +1,137 @@
+{
+  "title": "选择视觉世界 — AI 智能工单协同平台",
+  "question": "方向抽取指定「公文流转 · 签批单」世界构建：可保留主方向、选备选方向、选类别标准或重摇。",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "公文流转 · 签批单",
+      "kicker": "THE ROLL",
+      "lineage": "中文企业公文流转单 / 签批栏文化",
+      "thesis": "工单即卷宗：界面是一张随处理不断被签批的公文，Agent 每一步都要落进签批栏，等人工盖章才能继续。",
+      "palette": ["#F7F7F2", "#1C2B33", "#C13A2B", "#24345C"],
+      "materials": ["冷白纸面", "朱红印泥", "蓝黑墨水", "发丝分隔线"],
+      "viewport": "三栏工作台是一份摊开的流转卷宗：左栏来文登记簿（工单列表），中栏当前公文（工单详情），右栏签批栏（Copilot 执行计划），待确认的步骤空着章位，只盖得出红色「待确认」印。",
+      "risk": "做旧过度会沦为老 OA 仿古戏仿；纸面拟物一旦失手就显得廉价。",
+      "raised": [
+        {
+          "from": "challenger-phosphor",
+          "raise": "状态自打印：Copilot 侧挂一条 append-only「流转记录」，状态每变追加一行，随时回放。"
+        },
+        {
+          "from": "challenger-cloud",
+          "raise": "颜色只在边缘：步骤状态色只出现在行左 3px 竖线与小标签上，纸面保持无彩。"
+        },
+        {
+          "from": "challenger-folio",
+          "raise": "Trace 页用等比基线板式：节点与 Tool 调用等高排在同一基线上，同尺同底，如一株植物的连续图版。"
+        },
+        {
+          "from": "challenger-origami",
+          "raise": "步骤序号占死左边距列，当前步以朱红实心圆点标记。"
+        },
+        {
+          "from": "challenger-specimen",
+          "raise": "run_id / token / 时延等元数据一律等宽小字作铅字注记。"
+        }
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "安灯看板",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "丰田安灯 / 目视化管理板",
+      "thesis": "Agent 是产线上的机器：每一步亮一盏灯，需要人工判断时拉灯呼叫，处理人走过去拍板。",
+      "palette": ["#F2F3F1", "#20242A", "#D9A400", "#1F7A4D"],
+      "materials": ["状态灯", "标准作业步骤卡", "哑光金属"],
+      "viewport": "顶部安灯条给整单状态，计划步骤横排成工位卡，异常步骤黄灯闪烁呼叫确认。",
+      "risk": "它是我排序最高的候选，也因此是这类工具最容易落地的隐喻，可能看起来像所有看板工具。"
+    },
+    {
+      "id": "challenger-specimen",
+      "label": "等宽铅字样张",
+      "verdict": "competitive",
+      "lineage": "活字样张 / 字体规格单",
+      "thesis": "层级全靠字号对比与等宽小注，纸面上没有一处多余装饰。",
+      "palette": ["#FAFAF7", "#111111", "#C13A2B"],
+      "materials": ["铅字", "冷白纸", "等宽注记"],
+      "viewport": "工作台像一张排好的铅字样张：大号标题、小号正文、等宽注记各司其职。",
+      "case": "融合顺利：冷静纸面与可读性占优；但处理人群对它的身份认同不突出。",
+      "risk": "容易收敛成「编辑感」模板，缺少状态语义。"
+    },
+    {
+      "id": "challenger-origami",
+      "label": "折纸步骤谱",
+      "verdict": "competitive",
+      "lineage": "折纸折叠图解 / 折谱",
+      "thesis": "步骤像三十二折折谱：按序占死左边距列，当前折以圆点标记，从未完成到成品一纸贯通。",
+      "palette": ["#F5F1E8", "#8A2B1E", "#B98A2F"],
+      "materials": ["和纸", "折痕线", "朱砂点"],
+      "viewport": "执行计划是一条纵向折谱，每折一格，确认动作等于折出下一形。",
+      "case": "步骤语法与执行计划高度契合；但状态丰富度弱于批文世界。",
+      "risk": "隐喻太雅，处理紧急工单时会显得慢条斯理。"
+    },
+    {
+      "id": "challenger-cloud",
+      "label": "云缘虹彩",
+      "verdict": "competitive",
+      "lineage": "虹彩云缘光学观测",
+      "thesis": "整版无彩，唯一的状态色出现在发丝般的行缘竖线上，克制到极致。",
+      "palette": ["#FBFBFB", "#5A6472", "#8F7BD8", "#D98BA4"],
+      "materials": ["虹彩发丝边", "云白底"],
+      "viewport": "白底工作台，状态全靠行左缘的窄色带表达，正文一字不动。",
+      "case": "清晰度占优：零干扰；但视觉署名感弱。",
+      "risk": "冷静到没有记忆点，评审后容易被忘记。"
+    },
+    {
+      "id": "challenger-folio",
+      "label": "植物志图版",
+      "verdict": "competitive",
+      "lineage": "博物学植物志铜版画",
+      "thesis": "同尺同底的连续图版：一次 Run 的节点与调用等高排在同一基线上，如一株植物的五个阶段。",
+      "palette": ["#F4EFE4", "#4A4A3F", "#7A2E2A"],
+      "materials": ["铜版画线条", "米黄纸", "sepia 发丝线"],
+      "viewport": "Trace 页是一张植物志版页：每个节点一格图版，阶段标题加图注。",
+      "case": "Trace 结构完美映射；但整体节奏偏慢，工作台信息密度不足。",
+      "risk": "观赏性高于操作性，日常处理会嫌它绕。"
+    },
+    {
+      "id": "challenger-phosphor",
+      "label": "荧光机房终端",
+      "verdict": "declined",
+      "lineage": "绿磷机房终端",
+      "thesis": "Agent 工作记录是一段自打印的绿磷转录，状态打印自己而不是摆控件。",
+      "palette": ["#05140C", "#39FF6E", "#1E7A3C"],
+      "materials": ["磷光玻璃", "扫描线"],
+      "case": "融合失败：企业处理人对机房审美认同弱，转录式状态淹没计划结构。",
+      "kept": "状态自打印的 append-only 记录条——已反哺主方向。"
+    },
+    {
+      "id": "challenger-telop",
+      "label": "综艺字幕场",
+      "verdict": "declined",
+      "lineage": "综艺花字字幕",
+      "thesis": "按情绪定色的描边字幕盖满画面，把界面变成活漫画。",
+      "palette": ["#111111", "#FFD400", "#E8452C"],
+      "materials": ["描边字幕", "高饱和填充"],
+      "case": "企业工单场景认同错位，表达淹没任务。",
+      "kept": "强调只变字重与比例、不挪位置——已反哺主方向。"
+    }
+  ],
+  "reroll": {
+    "registers": ["safer", "bolder"]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": false
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "类别标准：通用后管台",
+    "thesis": "这个类别默认会交付的样子——白卡片、蓝色主按钮、图标侧边栏——做到极致工艺。",
+    "palette": ["#FFFFFF", "#1D2129", "#2F54EB"],
+    "materials": ["通用栅格", "组件库面板"],
+    "viewport": "访客一眼就认识的排列，工艺拉满。",
+    "risk": "与所有竞品无法区分——这正是它的定义。"
+  },
+  "steer": true
+}

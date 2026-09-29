@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-29T16:29:00+08:00",
+  "title": "Design System: AI 智能工单协同平台",
+  "extensions": {
+    "colorMeta": {
+      "workshop-bg": {
+        "role": "neutral",
+        "displayName": "车间光地面",
+        "canonical": "#F3F4F2",
+        "tonalRamp": ["oklch(15% 0.005 140)", "oklch(25% 0.005 140)", "oklch(35% 0.005 140)", "oklch(45% 0.005 140)", "oklch(55% 0.005 140)", "oklch(68% 0.006 140)", "oklch(82% 0.006 140)", "oklch(95% 0.005 140)"]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "面板白",
+        "canonical": "#FFFFFF",
+        "tonalRamp": ["oklch(15% 0.003 140)", "oklch(25% 0.003 140)", "oklch(35% 0.003 140)", "oklch(45% 0.003 140)", "oklch(55% 0.003 140)", "oklch(68% 0.003 140)", "oklch(82% 0.003 140)", "oklch(95% 0.003 140)"]
+      },
+      "panel-tint": {
+        "role": "neutral",
+        "displayName": "面板浅灰",
+        "canonical": "#FAFBFA",
+        "tonalRamp": ["oklch(15% 0.004 140)", "oklch(25% 0.004 140)", "oklch(35% 0.004 140)", "oklch(45% 0.004 140)", "oklch(55% 0.004 140)", "oklch(68% 0.004 140)", "oklch(82% 0.004 140)", "oklch(96% 0.004 140)"]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "发丝线",
+        "canonical": "#E2E4E1",
+        "tonalRamp": ["oklch(15% 0.005 140)", "oklch(25% 0.005 140)", "oklch(35% 0.005 140)", "oklch(45% 0.005 140)", "oklch(55% 0.005 140)", "oklch(68% 0.006 140)", "oklch(82% 0.006 140)", "oklch(91% 0.005 140)"]
+      },
+      "hairline-strong": {
+        "role": "neutral",
+        "displayName": "强发丝线",
+        "canonical": "#CDD1CD",
+        "tonalRamp": ["oklch(15% 0.007 140)", "oklch(25% 0.007 140)", "oklch(35% 0.007 140)", "oklch(45% 0.007 140)", "oklch(55% 0.007 140)", "oklch(68% 0.008 140)", "oklch(84% 0.007 140)", "oklch(92% 0.006 140)"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "近黑墨",
+        "canonical": "#1F2328",
+        "tonalRamp": ["oklch(15% 0.012 255)", "oklch(25% 0.012 255)", "oklch(35% 0.012 255)", "oklch(45% 0.012 255)", "oklch(55% 0.012 255)", "oklch(68% 0.012 255)", "oklch(82% 0.012 255)", "oklch(95% 0.012 255)"]
+      },
+      "ink-secondary": {
+        "role": "neutral",
+        "displayName": "次要墨",
+        "canonical": "#5A6167",
+        "tonalRamp": ["oklch(15% 0.015 230)", "oklch(25% 0.015 230)", "oklch(35% 0.015 230)", "oklch(45% 0.015 230)", "oklch(55% 0.015 230)", "oklch(68% 0.014 230)", "oklch(82% 0.012 230)", "oklch(95% 0.01 230)"]
+      },
+      "ink-tertiary": {
+        "role": "neutral",
+        "displayName": "三级墨",
+        "canonical": "#6B7178",
+        "tonalRamp": ["oklch(15% 0.014 230)", "oklch(25% 0.014 230)", "oklch(35% 0.014 230)", "oklch(45% 0.014 230)", "oklch(55% 0.014 230)", "oklch(68% 0.013 230)", "oklch(82% 0.011 230)", "oklch(95% 0.009 230)"]
+      },
+      "lamp-green": {
+        "role": "secondary",
+        "displayName": "运转绿",
+        "canonical": "#1F7A4D",
+        "tonalRamp": ["oklch(15% 0.05 155)", "oklch(25% 0.07 155)", "oklch(35% 0.085 155)", "oklch(45% 0.095 155)", "oklch(50% 0.1 155)", "oklch(68% 0.09 155)", "oklch(82% 0.07 155)", "oklch(95% 0.04 155)"]
+      },
+      "green-wash": {
+        "role": "secondary",
+        "displayName": "洗绿底",
+        "canonical": "#E8F2ED",
+        "tonalRamp": ["oklch(15% 0.02 155)", "oklch(25% 0.025 155)", "oklch(35% 0.03 155)", "oklch(45% 0.032 155)", "oklch(55% 0.034 155)", "oklch(68% 0.035 155)", "oklch(82% 0.035 155)", "oklch(94% 0.03 155)"]
+      },
+      "lamp-amber": {
+        "role": "secondary",
+        "displayName": "呼叫琥珀",
+        "canonical": "#B7791F",
+        "tonalRamp": ["oklch(15% 0.05 75)", "oklch(25% 0.07 75)", "oklch(35% 0.09 75)", "oklch(45% 0.105 75)", "oklch(55% 0.115 75)", "oklch(68% 0.11 75)", "oklch(82% 0.09 75)", "oklch(95% 0.05 75)"]
+      },
+      "amber-deep": {
+        "role": "secondary",
+        "displayName": "琥珀深字",
+        "canonical": "#8F5F12",
+        "tonalRamp": ["oklch(15% 0.045 75)", "oklch(25% 0.06 75)", "oklch(35% 0.08 75)", "oklch(45% 0.09 75)", "oklch(50% 0.1 75)", "oklch(68% 0.095 75)", "oklch(82% 0.08 75)", "oklch(95% 0.045 75)"]
+      },
+      "amber-wash": {
+        "role": "secondary",
+        "displayName": "洗琥珀底",
+        "canonical": "#FAF3E4",
+        "tonalRamp": ["oklch(15% 0.03 85)", "oklch(25% 0.038 85)", "oklch(35% 0.044 85)", "oklch(45% 0.047 85)", "oklch(55% 0.049 85)", "oklch(68% 0.05 85)", "oklch(82% 0.05 85)", "oklch(96% 0.045 85)"]
+      },
+      "lamp-red": {
+        "role": "secondary",
+        "displayName": "故障红",
+        "canonical": "#C13A2B",
+        "tonalRamp": ["oklch(15% 0.06 30)", "oklch(25% 0.09 30)", "oklch(35% 0.12 30)", "oklch(45% 0.14 30)", "oklch(50% 0.15 30)", "oklch(68% 0.13 30)", "oklch(82% 0.1 30)", "oklch(95% 0.05 30)"]
+      },
+      "red-wash": {
+        "role": "secondary",
+        "displayName": "洗红底",
+        "canonical": "#FAEDEB",
+        "tonalRamp": ["oklch(15% 0.015 30)", "oklch(25% 0.022 30)", "oklch(35% 0.03 30)", "oklch(45% 0.035 30)", "oklch(55% 0.038 30)", "oklch(68% 0.038 30)", "oklch(82% 0.035 30)", "oklch(96% 0.025 30)"]
+      },
+      "lamp-orange": {
+        "role": "secondary",
+        "displayName": "动作橙",
+        "canonical": "#C2610E",
+        "tonalRamp": ["oklch(15% 0.045 60)", "oklch(25% 0.07 60)", "oklch(35% 0.095 60)", "oklch(45% 0.115 60)", "oklch(55% 0.125 60)", "oklch(68% 0.115 60)", "oklch(82% 0.095 60)", "oklch(95% 0.05 60)"]
+      },
+      "orange-deep": {
+        "role": "secondary",
+        "displayName": "动作橙深字",
+        "canonical": "#A34E08",
+        "tonalRamp": ["oklch(15% 0.04 60)", "oklch(25% 0.06 60)", "oklch(32% 0.08 60)", "oklch(42% 0.1 60)", "oklch(50% 0.11 60)", "oklch(62% 0.105 60)", "oklch(78% 0.085 60)", "oklch(93% 0.04 60)"]
+      },
+      "orange-wash": {
+        "role": "secondary",
+        "displayName": "洗橙底",
+        "canonical": "#FCF3E7",
+        "tonalRamp": ["oklch(15% 0.02 85)", "oklch(25% 0.028 85)", "oklch(35% 0.036 85)", "oklch(45% 0.042 85)", "oklch(55% 0.046 85)", "oklch(68% 0.048 85)", "oklch(82% 0.046 85)", "oklch(97% 0.03 85)"]
+      },
+      "orange-line": {
+        "role": "secondary",
+        "displayName": "橙描边",
+        "canonical": "#EBD3AE",
+        "tonalRamp": ["oklch(15% 0.03 80)", "oklch(25% 0.045 80)", "oklch(35% 0.06 80)", "oklch(45% 0.075 80)", "oklch(55% 0.085 80)", "oklch(68% 0.09 80)", "oklch(82% 0.085 80)", "oklch(90% 0.07 80)"]
+      },
+      "status-gray": {
+        "role": "secondary",
+        "displayName": "复核灰",
+        "canonical": "#5A6472",
+        "tonalRamp": ["oklch(15% 0.015 250)", "oklch(25% 0.018 250)", "oklch(35% 0.02 250)", "oklch(45% 0.022 250)", "oklch(55% 0.022 250)", "oklch(68% 0.02 250)", "oklch(82% 0.016 250)", "oklch(95% 0.01 250)"]
+      },
+      "gray-wash": {
+        "role": "secondary",
+        "displayName": "洗灰底",
+        "canonical": "#F0F2F4",
+        "tonalRamp": ["oklch(15% 0.006 250)", "oklch(25% 0.008 250)", "oklch(35% 0.009 250)", "oklch(45% 0.01 250)", "oklch(55% 0.01 250)", "oklch(68% 0.011 250)", "oklch(82% 0.01 250)", "oklch(96% 0.008 250)"]
+      },
+      "steel-blue": {
+        "role": "primary",
+        "displayName": "深钢蓝",
+        "canonical": "#24518F",
+        "tonalRamp": ["oklch(15% 0.04 265)", "oklch(25% 0.06 265)", "oklch(35% 0.075 265)", "oklch(42% 0.09 265)", "oklch(55% 0.085 265)", "oklch(68% 0.07 265)", "oklch(82% 0.05 265)", "oklch(95% 0.025 265)"]
+      },
+      "steel-blue-hover": {
+        "role": "primary",
+        "displayName": "深钢蓝（悬停）",
+        "canonical": "#1D4376",
+        "tonalRamp": ["oklch(15% 0.038 265)", "oklch(25% 0.058 265)", "oklch(32% 0.075 265)", "oklch(38% 0.085 265)", "oklch(55% 0.08 265)", "oklch(68% 0.068 265)", "oklch(82% 0.05 265)", "oklch(95% 0.025 265)"]
+      },
+      "steel-blue-wash": {
+        "role": "primary",
+        "displayName": "洗蓝底",
+        "canonical": "#F0F4F9",
+        "tonalRamp": ["oklch(15% 0.015 265)", "oklch(25% 0.018 265)", "oklch(35% 0.02 265)", "oklch(45% 0.021 265)", "oklch(55% 0.022 265)", "oklch(68% 0.022 265)", "oklch(82% 0.021 265)", "oklch(96% 0.02 265)"]
+      },
+      "steel-blue-line": {
+        "role": "primary",
+        "displayName": "蓝发丝线",
+        "canonical": "#B9CCE4",
+        "tonalRamp": ["oklch(15% 0.04 265)", "oklch(25% 0.045 265)", "oklch(35% 0.05 265)", "oklch(45% 0.05 265)", "oklch(55% 0.05 265)", "oklch(68% 0.05 265)", "oklch(82% 0.05 265)", "oklch(88% 0.045 265)"]
+      },
+      "console-dark": {
+        "role": "neutral",
+        "displayName": "控制台深灰",
+        "canonical": "#23272B",
+        "tonalRamp": ["oklch(15% 0.012 220)", "oklch(17% 0.012 220)", "oklch(25% 0.013 220)", "oklch(35% 0.013 220)", "oklch(45% 0.014 220)", "oklch(55% 0.014 220)", "oklch(68% 0.013 220)", "oklch(82% 0.012 220)"]
+      },
+      "scrim": {
+        "role": "neutral",
+        "displayName": "遮罩墨纱",
+        "canonical": "rgba(20,26,34,.4)",
+        "tonalRamp": ["oklch(10% 0.01 255)", "oklch(15% 0.012 255)", "oklch(20% 0.012 255)", "oklch(30% 0.012 255)", "oklch(40% 0.012 255)", "oklch(55% 0.012 255)", "oklch(70% 0.01 255)", "oklch(85% 0.008 255)"]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "页面题",
+        "purpose": "登录卡标题 19px；两个工作台的页面题 18px（『王五 - 学分置换申请』）；品牌名 15px/600。"
+      },
+      "title": {
+        "displayName": "面板题",
+        "purpose": "面板头与抽屉头标题（14px/600），与计数徽标、状态灯组配对。"
+      },
+      "section": {
+        "displayName": "节标题",
+        "purpose": "右栏节头（问题清单/规则明细/老师操作）与预览卡标题（13.5px/600）；节内计数 12px/500 三级墨。"
+      },
+      "body": {
+        "displayName": "正文",
+        "purpose": "14px 基准、13–13.5px 密排、12.5px 次级文字（树搜索/详情网格/内联编辑）；叙述性长文行高升至 1.75。"
+      },
+      "label": {
+        "displayName": "标签",
+        "purpose": "12px/600 小标与表头，下限 12px；分组标签带 0.04em 字距；字段标签 12.5px。"
+      },
+      "mono": {
+        "displayName": "机器数据",
+        "purpose": "Consolas 11–12px，专属编号、时刻、耗时、参数、tokens 与规则证据摘录；日志块行高 1.9。"
+      }
+    },
+    "shadows": [
+      {
+        "name": "ambient-hairline",
+        "value": "0 1px 2px rgba(16,24,32,.05)",
+        "purpose": "全系统唯一常规阴影：面板常态与选中页签的『浮起一毫米』。平面向发丝线借深度。"
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px rgba(36,81,143,.1)",
+        "purpose": "输入框聚焦光环，伴随边框转钢蓝出现。"
+      },
+      {
+        "name": "overlay-lift",
+        "value": "0 6px 20px rgba(16,24,32,.12)",
+        "purpose": "浮层影：执行详情抽屉与材料预览卡——真正离开页面的浮层专用，配遮罩墨纱 rgba(20,26,34,.4)（预览 .45）。"
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 2px solid #24518F; outline-offset: 2px",
+        "purpose": "全局 :focus-visible 焦点环，保障一切可交互元素。"
+      }
+    ],
+    "motion": [
+      {
+        "name": "lamp-blink",
+        "value": "@keyframes blink{0%,100%{opacity:1}50%{opacity:.35}} · 1.1s ease-in-out infinite",
+        "purpose": "进行中信号的硬闪烁，无光晕；颜色跟随执行者——审核台蓝灯=AI 正在跑，工单台绿灯=流程推进。每屏至多一处；prefers-reduced-motion 下停止。"
+      },
+      {
+        "name": "lamp-call",
+        "value": "@keyframes call{0%,100%{box-shadow:0 0 0 0 rgba(183,121,31,.28)}50%{box-shadow:0 0 0 4px rgba(183,121,31,.12)}} · 1.6s ease-in-out infinite",
+        "purpose": "琥珀呼叫呼吸——工单线专属（WAITING_CONFIRM）；审核台无使用位，待复核=常亮橙灯。同一屏最多一处。"
+      },
+      {
+        "name": "level-transition",
+        "value": "chevron 旋转 .15s · 遮罩淡入 .18s · 抽屉滑入 .2s ease-out",
+        "purpose": "过渡只服务空间层级（树/规则行展开、浮层进出）；不服务装饰。"
+      },
+      {
+        "name": "state-instant",
+        "value": "none（灯信号之外无装饰性动画）",
+        "purpose": "悬停与状态切换瞬时完成；动效法则『每屏至多一个运动信号』。"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "workbench-2col",
+        "value": "1100px",
+        "purpose": "工单台三栏退两栏（侧栏 220px，Copilot 下移）；审核台退单列堆叠，树面板限高 340px。"
+      },
+      {
+        "name": "stack",
+        "value": "820px",
+        "purpose": "全部纵向堆叠，主导航隐藏；审核台元数据网格退 2 列，用户角色行隐藏。"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "深钢蓝主操作（确认审核/同意置换/登录/发送），悬停加深，禁用转灰；永远不用渐变与投影。",
+      "html": "<button class='ds-btn-primary'>确认审核结果</button>",
+      "css": ".ds-btn-primary{height:36px;padding:0 22px;background:#24518F;color:#fff;border:none;border-radius:6px;font:600 13.5px 'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif;cursor:pointer}.ds-btn-primary:hover{background:#1D4376}.ds-btn-primary:focus-visible{outline:2px solid #24518F;outline-offset:2px}.ds-btn-primary:disabled{background:#E7EAEE;color:#5F676F;cursor:not-allowed}"
+    },
+    {
+      "name": "Warn Button",
+      "kind": "button",
+      "refersTo": "button-warn",
+      "description": "动作橙主按钮（确认并退回补材料）——『橙色=等我操作』的按钮形态，与钢蓝主按钮随业务状态二选一出现；hover 加深为橙深字色。",
+      "html": "<button class='ds-btn-warn'>确认并退回补材料</button>",
+      "css": ".ds-btn-warn{height:38px;padding:0 20px;background:#C2610E;color:#fff;border:none;border-radius:6px;font:600 13.5px 'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif;cursor:pointer}.ds-btn-warn:hover{background:#A34E08}.ds-btn-warn:focus-visible{outline:2px solid #24518F;outline-offset:2px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "白底强发丝描边的次级动作（修改审核结果/修改计划）；悬停文字转浓、描边加深、底转面板浅灰。",
+      "html": "<button class='ds-btn-ghost'>修改审核结果</button>",
+      "css": ".ds-btn-ghost{height:36px;padding:0 16px;background:#fff;border:1px solid #CDD1CD;border-radius:6px;color:#5A6167;font:400 13px 'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif;cursor:pointer}.ds-btn-ghost:hover{color:#1F2328;border-color:#6B7178;background:#FAFBFA}.ds-btn-ghost:focus-visible{outline:2px solid #24518F;outline-offset:2px}.ds-btn-ghost:disabled{color:#70777E;border-color:#E2E4E1;background:transparent;cursor:not-allowed}"
+    },
+    {
+      "name": "Status Lamp",
+      "kind": "custom",
+      "description": "8px 语义圆灯，两套已建语法：工单线四态（绿运转/琥珀呼叫/红故障/空心未动）+ 审核线六态（蓝=AI进行中、橙=等我操作、绿/红=终态、灰=需人工复核、空心=学生侧等待）；每屏至多一个运动信号。",
+      "html": "<span style='display:inline-flex;align-items:center;gap:12px'><span class='ds-lamp ds-lamp-blue ds-lamp-blink' role='img' aria-label='AI 正在审核'></span><span class='ds-lamp ds-lamp-orange' role='img' aria-label='待老师复核'></span><span class='ds-lamp ds-lamp-green' role='img' aria-label='已通过'></span><span class='ds-lamp ds-lamp-red' role='img' aria-label='已驳回'></span><span class='ds-lamp ds-lamp-gray' role='img' aria-label='需人工复核'></span><span class='ds-lamp ds-lamp-hollow' role='img' aria-label='待补材料'></span></span>",
+      "css": ".ds-lamp{display:inline-block;width:8px;height:8px;border-radius:50%;flex:none;background:#CDD1CD}.ds-lamp-green{background:#1F7A4D}.ds-lamp-red{background:#C13A2B}.ds-lamp-orange{background:#C2610E}.ds-lamp-gray{background:#5A6472}.ds-lamp-blue{background:#24518F}.ds-lamp-hollow{background:transparent;border:1.5px solid #CDD1CD}.ds-lamp-blink{animation:ds-blink 1.1s ease-in-out infinite}@keyframes ds-blink{0%,100%{opacity:1}50%{opacity:.35}}@media (prefers-reduced-motion:reduce){.ds-lamp-blink{animation:none}}"
+    },
+    {
+      "name": "Andon Bar",
+      "kind": "custom",
+      "description": "签名组件（工单台）：整单 Agent 进度的四段安灯条，常驻面板头下方；段间 1px 内嵌竖线，done=绿灯、hot=琥珀呼吸加粗。",
+      "html": "<div class='ds-andon' role='img' aria-label='执行安灯条'><span class='ds-andon-seg ds-done'><span class='ds-lamp ds-lg'></span>查询工单</span><span class='ds-andon-seg ds-done'><span class='ds-lamp ds-lg'></span>分析状态</span><span class='ds-andon-seg ds-hot'><span class='ds-lamp ds-lamp-call2' style='background:#B7791F'></span>创建任务</span><span class='ds-andon-seg'><span class='ds-lamp ds-lh'></span>通知负责人</span></div>",
+      "css": ".ds-andon{display:flex;background:#FAFBFA;border:1px solid #E2E4E1;border-radius:6px;font-family:'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif}.ds-andon-seg{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:8px 4px;font-size:12px;color:#5A6167;position:relative}.ds-andon-seg+.ds-andon-seg::before{content:'';position:absolute;left:0;top:8px;bottom:8px;width:1px;background:#E2E4E1}.ds-andon-seg.ds-done{color:#1F7A4D}.ds-andon-seg.ds-hot{color:#8F5F12;font-weight:600}.ds-andon .ds-lamp{display:inline-block;width:8px;height:8px;border-radius:50%;background:#CDD1CD;flex:none}.ds-andon .ds-lg{background:#1F7A4D}.ds-andon .ds-lh{background:transparent;border:1.5px solid #CDD1CD}.ds-andon .ds-lamp-call2{animation:ds-call2 1.6s ease-in-out infinite}@keyframes ds-call2{0%,100%{box-shadow:0 0 0 0 rgba(183,121,31,.28)}50%{box-shadow:0 0 0 4px rgba(183,121,31,.12)}}@media (prefers-reduced-motion:reduce){.ds-andon .ds-lamp-call2{animation:none}}"
+    },
+    {
+      "name": "Status Pill",
+      "kind": "chip",
+      "refersTo": "status-pill-green",
+      "description": "胶囊状态药丸五态（审核线）：洗色底 + 同族深字 + 内嵌小灯；蓝=待AI审核、橙=待老师复核/待最终审批、绿=已通过、红=已驳回、灰=待补材料。",
+      "html": "<span style='display:inline-flex;gap:8px;align-items:center;flex-wrap:wrap'><span class='ds-pill ds-pill-blue'><span class='ds-pill-lamp'></span>待AI审核</span><span class='ds-pill ds-pill-orange'><span class='ds-pill-lamp'></span>待老师复核</span><span class='ds-pill ds-pill-green'><span class='ds-pill-lamp'></span>已通过</span><span class='ds-pill ds-pill-red'><span class='ds-pill-lamp'></span>已驳回</span><span class='ds-pill ds-pill-gray'><span class='ds-pill-lamp'></span>待补材料</span></span>",
+      "css": ".ds-pill{display:inline-flex;align-items:center;gap:6px;font:600 12px 'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif;padding:3px 10px;border-radius:99px}.ds-pill-blue{background:#F0F4F9;color:#24518F}.ds-pill-orange{background:#FCF3E7;color:#A34E08}.ds-pill-green{background:#E8F2ED;color:#1F7A4D}.ds-pill-red{background:#FAEDEB;color:#C13A2B}.ds-pill-gray{background:#F0F2F4;color:#5A6472}.ds-pill-lamp{width:8px;height:8px;border-radius:50%;background:currentColor;flex:none}"
+    },
+    {
+      "name": "Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "白面板：1px 发丝边 + 8px 圆角 + 极淡环境影；面板头带底部分隔线，标题旁挂洗蓝计数徽标。",
+      "html": "<div class='ds-panel'><div class='ds-panel-head'><span class='ds-panel-title'>审核任务</span><span class='ds-panel-count'>8</span></div><div class='ds-panel-body'><p class='ds-panel-text'>面板内容独立滚动，页面本身不滚。</p></div></div>",
+      "css": ".ds-panel{display:flex;flex-direction:column;background:#fff;border:1px solid #E2E4E1;border-radius:8px;box-shadow:0 1px 2px rgba(16,24,32,.05);font-family:'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif;max-width:360px}.ds-panel-head{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid #E2E4E1}.ds-panel-title{font:600 14px/1.6 'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif;color:#1F2328}.ds-panel-count{font:600 12px/1.4 'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif;color:#24518F;background:#F0F4F9;border-radius:99px;padding:1px 8px}.ds-panel-body{padding:14px 16px}.ds-panel-text{margin:0;font:400 13px/1.6 'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif;color:#5A6167}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "白底强发丝描边输入框；聚焦边框转钢蓝并出现 3px 洗蓝光环，占位符为三级墨。",
+      "html": "<input class='ds-input' type='text' placeholder='输入自然语言指令（辅助入口）'>",
+      "css": ".ds-input{height:38px;width:280px;box-sizing:border-box;padding:0 12px;border:1px solid #CDD1CD;border-radius:6px;background:#fff;color:#1F2328;font:400 13px 'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif;outline:none}.ds-input::placeholder{color:#6B7178}.ds-input:focus{border-color:#24518F;box-shadow:0 0 0 3px rgba(36,81,143,.1)}.ds-input:focus-visible{outline:none}"
+    },
+    {
+      "name": "Folder Tree Row",
+      "kind": "custom",
+      "description": "签名组件（审核台左栏）：日期 → 状态组（灯 + 行内计数）→ 学生叶子三层树；chevron 展开旋转 90°，选中 = 洗蓝底钢蓝字，状态变更后自动归组。",
+      "html": "<div class='ds-tree'><div class='ds-t-row ds-t-date'><svg class='ds-chev ds-open' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m9 6 6 6-6 6'/></svg><span class='ds-t-label'>2026-09-29</span><span class='ds-t-count'>6</span></div><div class='ds-t-sub ds-open'><div class='ds-t-row ds-t-group'><svg class='ds-chev ds-open' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m9 6 6 6-6 6'/></svg><span class='ds-t-label'><span class='ds-lamp ds-lamp-orange'></span>待老师复核</span><span class='ds-t-count'>2</span></div><div class='ds-t-sub ds-open'><button class='ds-t-row ds-t-leaf ds-sel'><span class='ds-t-label'><span class='ds-lamp ds-lamp-orange'></span>王五</span></button><button class='ds-t-row ds-t-leaf'><span class='ds-t-label'><span class='ds-lamp ds-lamp-orange'></span>赵六</span></button></div></div></div>",
+      "css": ".ds-tree{width:280px;max-width:100%;font-family:'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif;padding:6px 8px}.ds-t-row{display:flex;align-items:center;gap:7px;width:100%;text-align:left;padding:5px 8px;border-radius:5px;font-size:13px;color:#1F2328;background:none;border:none;cursor:pointer}.ds-t-row:hover{background:#F8F9FB}.ds-t-date>.ds-t-label{font-weight:600}.ds-chev{width:14px;height:14px;color:#6B7178;flex:none;transition:transform .15s}.ds-chev.ds-open{transform:rotate(90deg)}.ds-t-count{margin-left:auto;font-size:12px;color:#6B7178}.ds-t-group{padding-left:22px}.ds-t-group .ds-t-label{display:flex;align-items:center;gap:7px}.ds-t-leaf{padding-left:44px}.ds-t-leaf .ds-t-label{display:flex;align-items:center;gap:7px;color:#5A6167}.ds-t-row.ds-sel{background:#EEF3FA;color:#24518F;font-weight:600}.ds-t-row.ds-sel .ds-t-label{color:#24518F}.ds-t-sub{display:none}.ds-t-sub.ds-open{display:block}.ds-lamp{display:inline-block;width:8px;height:8px;border-radius:50%;flex:none}.ds-lamp-orange{background:#C2610E}"
+    },
+    {
+      "name": "Rule Result Card",
+      "kind": "custom",
+      "description": "签名组件（审核台右栏）：规则 code + 名称 + 灯态 + chevron；展开详情为 52px 标签列网格（问题/依据/规则要求/证据摘录/置信度）+ 确认判断/修改判断，修改走内联编辑并重新汇总结论。",
+      "html": "<div class='ds-rules'><div class='ds-rule-row ds-open'><button class='ds-rule-btn'><span class='ds-rule-code'>R03</span><span class='ds-rule-name'>实习证明内容</span><span class='ds-rule-st ds-red'><span class='ds-lamp ds-lamp-red'></span>不通过</span><svg class='ds-rule-chev' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m9 6 6 6-6 6'/></svg></button><div class='ds-rule-detail'><div class='ds-rd-grid'><span class='ds-rd-k'>审核结果</span><span class='ds-rd-v ds-red'>不通过 <span class='ds-rd-modified'>老师已修改</span></span><span class='ds-rd-k'>问题</span><span class='ds-rd-v'>缺少明确的实习起止时间</span><span class='ds-rd-k'>规则要求</span><span class='ds-rd-v'>必须包含明确的开始时间与结束时间（精确到日）</span><span class='ds-rd-k'>证据</span><span class='ds-rd-v ds-quote'>\"2026年暑期在苏州华成信息技术有限公司实习……\"</span><span class='ds-rd-k'>置信度</span><span class='ds-rd-v'>0.92</span></div><div class='ds-rd-actions'><button class='ds-btn-sm ds-ghost'>确认判断</button><button class='ds-btn-sm ds-primary'>修改判断</button><span class='ds-rd-note'>修改后将重新汇总审核结论</span></div></div></div><div class='ds-rule-row'><button class='ds-rule-btn'><span class='ds-rule-code'>R02</span><span class='ds-rule-name'>文件类型</span><span class='ds-rule-st ds-green'><span class='ds-lamp ds-lamp-green'></span>通过</span><svg class='ds-rule-chev' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m9 6 6 6-6 6'/></svg></button></div></div>",
+      "css": ".ds-rules{border:1px solid #E4E7EB;border-radius:6px;overflow:hidden;max-width:420px;font-family:'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif}.ds-rule-row{background:#fff}.ds-rule-row+.ds-rule-row{border-top:1px solid #E4E7EB}.ds-rule-btn{display:flex;align-items:center;gap:9px;width:100%;text-align:left;padding:9px 12px;background:none;border:none;cursor:pointer;font-family:inherit;font-size:inherit}.ds-rule-btn:hover{background:#F8F9FB}.ds-rule-code{font:400 12px Consolas,'Courier New',monospace;color:#6B7178;width:26px;flex:none}.ds-rule-name{font-size:13px;color:#1F2328;flex:1;min-width:0}.ds-rule-st{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;flex:none}.ds-rule-st.ds-green{color:#1F7A4D}.ds-rule-st.ds-red{color:#C13A2B}.ds-rule-st.ds-orange{color:#A34E08}.ds-rule-st.ds-gray{color:#5A6472}.ds-rule-chev{width:13px;height:13px;color:#6B7178;transition:transform .15s;flex:none}.ds-rule-row.ds-open .ds-rule-chev{transform:rotate(90deg)}.ds-rule-detail{display:none;padding:11px 13px 13px;background:#F8F9FB;border-top:1px solid #E4E7EB}.ds-rule-row.ds-open .ds-rule-detail{display:block}.ds-rd-grid{display:grid;grid-template-columns:52px 1fr;gap:5px 10px;font-size:12.5px}.ds-rd-k{color:#6B7178}.ds-rd-v{color:#1F2328}.ds-rd-v.ds-red{color:#C13A2B}.ds-rd-v.ds-quote{font:400 12px Consolas,'Courier New',monospace;color:#5A6167;background:#fff;border:1px solid #E4E7EB;border-radius:4px;padding:4px 8px}.ds-rd-modified{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:#A34E08;background:#FCF3E7;border:1px solid #EBD3AE;border-radius:4px;padding:1px 7px}.ds-rd-actions{display:flex;gap:8px;margin-top:11px;align-items:center}.ds-btn-sm{height:30px;padding:0 14px;border-radius:5px;font-size:12.5px;font-weight:600;cursor:pointer;border:none;font-family:inherit}.ds-btn-sm.ds-primary{background:#24518F;color:#fff}.ds-btn-sm.ds-primary:hover{background:#1D4376}.ds-btn-sm.ds-ghost{border:1px solid #D3D8DE;color:#5A6167;background:#fff}.ds-btn-sm.ds-ghost:hover{color:#1F2328;border-color:#6B7178}.ds-rd-note{font-size:12px;color:#6B7178}.ds-lamp{display:inline-block;width:8px;height:8px;border-radius:50%;flex:none}.ds-lamp-red{background:#C13A2B}.ds-lamp-green{background:#1F7A4D}"
+    },
+    {
+      "name": "Conclusion Banner",
+      "kind": "custom",
+      "description": "结论横幅四语义色调（橙=需补材料 / 红=不通过 / 绿=通过 / 灰=需人工复核）：洗色底 + 灯 + 14px/600 主句 + 12px 副句；终态（绿/红）副文回次级墨。",
+      "html": "<div class='ds-banners'><div class='ds-banner ds-orange'><span class='ds-lamp ds-lamp-orange'></span><span><span class='ds-b-main'>审核结论：需要补充材料</span><div class='ds-b-sub'>3 项问题 · 1 项材料缺失 · 1 项需人工复核</div></span></div><div class='ds-banner ds-red'><span class='ds-lamp ds-lamp-red'></span><span><span class='ds-b-main'>审核结论：审核不通过</span><div class='ds-b-sub'>2 项问题</div></span></div><div class='ds-banner ds-green'><span class='ds-lamp ds-lamp-green'></span><span><span class='ds-b-main'>审核结论：材料齐全，审核通过</span><div class='ds-b-sub'>全部规则通过</div></span></div><div class='ds-banner ds-gray'><span class='ds-lamp ds-lamp-gray'></span><span><span class='ds-b-main'>审核结论：需人工复核</span><div class='ds-b-sub'>规则判定均通过，1 项需人工确认</div></span></div></div>",
+      "css": ".ds-banners{display:flex;flex-direction:column;gap:10px;max-width:420px;font-family:'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif}.ds-banner{display:flex;align-items:flex-start;gap:10px;padding:11px 13px;border-radius:6px}.ds-banner .ds-lamp{margin-top:6px}.ds-banner .ds-b-main{font-size:14px;font-weight:600;display:block}.ds-banner .ds-b-sub{font-size:12px;font-weight:400;margin-top:2px}.ds-banner.ds-orange{background:#FCF3E7;color:#A34E08}.ds-banner.ds-red{background:#FAEDEB;color:#C13A2B}.ds-banner.ds-green{background:#E9F3EE;color:#1F7A4D}.ds-banner.ds-gray{background:#F0F2F4;color:#5A6472}.ds-banner.ds-red .ds-b-sub,.ds-banner.ds-green .ds-b-sub{color:#5A6167}.ds-lamp{display:inline-block;width:8px;height:8px;border-radius:50%;flex:none}.ds-lamp-orange{background:#C2610E}.ds-lamp-red{background:#C13A2B}.ds-lamp-green{background:#1F7A4D}.ds-lamp-gray{background:#5A6472}"
+    },
+    {
+      "name": "Execution Drawer",
+      "kind": "custom",
+      "description": "签名组件（审核台）：440px 右滑执行详情抽屉 + rgba(20,26,34,.4) 遮罩；头部自我降级说明、run-meta 等宽格、NODE/TOOL/AUDIT/GATE 四色类型标 wf 行（此处为静态快照，实际为 fixed 右侧滑入）。",
+      "html": "<div class='ds-drawer-demo'><div class='ds-drawer'><div class='ds-drawer-head'><h2>Agent 执行详情</h2><button class='ds-drawer-close' aria-label='关闭'><svg width='15' height='15' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round'><path d='M6 6l12 12M18 6 6 18'/></svg></button></div><div class='ds-drawer-body'><div class='ds-drawer-note'>技术执行详情 · 管理员 / 开发排查视角，老师日常审核无需关注</div><div class='ds-run-meta'><div><span>Run ID　</span><b>RUN-20260929-0042</b></div><div><span>模型　</span><b>deepseek-chat</b></div><div><span>状态　</span><b>WAITING_HUMAN_REVIEW</b></div><div><span>总耗时　</span><b>9.8s（不含人工等待）</b></div></div><div class='ds-wf'><div class='ds-wf-row'><span class='ds-wf-seq'>01</span><span class='ds-wf-tag ds-node'>NODE</span><span class='ds-wf-name'>load_application</span><span class='ds-wf-detail'>加载申请与学籍信息</span><span class='ds-lamp ds-lamp-green'></span><span class='ds-wf-dur'>910ms</span></div><div class='ds-wf-row'><span class='ds-wf-seq'>02</span><span class='ds-wf-tag ds-tool'>TOOL</span><span class='ds-wf-name'>query_materials</span><span class='ds-wf-detail'>{\"application_id\":3} → 2 份材料</span><span class='ds-lamp ds-lamp-green'></span><span class='ds-wf-dur'>121ms</span></div><div class='ds-wf-row'><span class='ds-wf-seq'>04</span><span class='ds-wf-tag ds-rule'>AUDIT</span><span class='ds-wf-name'>audit R03 实习证明内容</span><span class='ds-wf-detail'>审核中…</span><span class='ds-lamp ds-lamp-blue ds-lamp-blink'></span><span class='ds-wf-dur'>—</span></div><div class='ds-wf-row'><span class='ds-wf-seq'>11</span><span class='ds-wf-tag ds-int'>GATE</span><span class='ds-wf-name'>INTERRUPT</span><span class='ds-wf-detail'>WAITING_HUMAN_REVIEW · 等待老师复核</span><span class='ds-lamp ds-lamp-green'></span><span class='ds-wf-dur'>—</span></div></div><div class='ds-drawer-foot'>完整 Trace 与 Token 明细见「Agent 运行记录」页面（ADMIN 视角）。</div></div></div></div>",
+      "css": ".ds-drawer-demo{background:rgba(20,26,34,.4);padding:16px;display:flex;justify-content:flex-end;font-family:'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif}.ds-drawer{width:440px;max-width:100%;background:#fff;border-left:1px solid #E4E7EB;box-shadow:0 6px 20px rgba(16,24,32,.12);display:flex;flex-direction:column}.ds-drawer-head{padding:14px 18px;border-bottom:1px solid #E4E7EB;display:flex;align-items:center;gap:10px}.ds-drawer-head h2{font-size:14px;font-weight:600;color:#1F2328;margin:0}.ds-drawer-close{margin-left:auto;width:28px;height:28px;border-radius:5px;display:flex;align-items:center;justify-content:center;color:#5A6167;background:none;border:none;cursor:pointer}.ds-drawer-close:hover{background:#F8F9FB;color:#1F2328}.ds-drawer-body{padding:14px 18px 20px;overflow-y:auto}.ds-drawer-note{font-size:12px;color:#6B7178;background:#F8F9FB;border:1px solid #E4E7EB;border-radius:5px;padding:6px 10px}.ds-run-meta{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;font-size:12.5px;border:1px solid #E4E7EB;border-radius:6px;padding:10px 12px;background:#F8F9FB;margin-top:12px}.ds-run-meta span{color:#6B7178}.ds-run-meta b{font-weight:600;color:#1F2328}.ds-wf{margin-top:14px;border:1px solid #E4E7EB;border-radius:6px;overflow:hidden}.ds-wf-row{display:flex;align-items:center;gap:9px;min-height:36px;padding:7px 12px}.ds-wf-row+.ds-wf-row{border-top:1px solid #F8F9FB}.ds-wf-seq{font:400 12px Consolas,'Courier New',monospace;color:#6B7178;width:22px;flex:none}.ds-wf-tag{font-size:12px;font-weight:600;border-radius:4px;padding:0 7px;flex:none;line-height:18px}.ds-wf-tag.ds-node{background:#F8F9FB;border:1px solid #E4E7EB;color:#5A6167}.ds-wf-tag.ds-tool{background:#EEF3FA;border:1px solid #C6D6EA;color:#24518F}.ds-wf-tag.ds-rule{background:#F0F2F4;border:1px solid #D3D8DE;color:#5A6472}.ds-wf-tag.ds-int{background:#FCF3E7;border:1px solid #EBD3AE;color:#A34E08}.ds-wf-name{font-size:13px;font-weight:600;flex:none;color:#1F2328}.ds-wf-detail{font:400 12px Consolas,'Courier New',monospace;color:#6B7178;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ds-wf-dur{font:400 12px Consolas,'Courier New',monospace;color:#5A6167;flex:none}.ds-drawer-foot{margin-top:12px;font-size:12px;color:#6B7178}.ds-lamp{display:inline-block;width:8px;height:8px;border-radius:50%;flex:none}.ds-lamp-green{background:#1F7A4D}.ds-lamp-blue{background:#24518F}.ds-lamp-blink{animation:ds-blink 1.1s ease-in-out infinite}@keyframes ds-blink{0%,100%{opacity:1}50%{opacity:.35}}@media (prefers-reduced-motion:reduce){.ds-lamp-blink{animation:none}}"
+    },
+    {
+      "name": "Mono Run Log",
+      "kind": "custom",
+      "description": "深灰控制台流转日志，Consolas 12px；四色行内语法——时刻灰、叙述浅灰、成功绿、呼叫琥珀。作用域铁律：只属于 ADMIN「Agent 运行记录」页与评审工具，老师主工作面禁止（技术执行信息入抽屉）。",
+      "html": "<div class='ds-runlog'><div><span class='ds-rl-t'>11:05:15</span>query_ticket(1007) <span class='ds-rl-ok'>→ SUCCESS · 342ms</span></div><div><span class='ds-rl-t'>11:05:18</span><span class='ds-rl-call'>计划已生成 · 等待人工确认（步骤 03/04）</span></div><div><span class='ds-rl-t'>11:12:36</span><span class='ds-rl-dim'>人工确认 · 陈明（继承 OPERATOR 权限）</span></div></div>",
+      "css": ".ds-runlog{font:400 12px/1.9 Consolas,'Courier New',monospace;color:#B9C0C6;background:#23272B;border-radius:6px;padding:10px 13px}.ds-runlog .ds-rl-t{color:#9AA1A8;margin-right:8px}.ds-runlog .ds-rl-ok{color:#6FBF8E}.ds-runlog .ds-rl-call{color:#E4B45C}.ds-runlog .ds-rl-dim{color:#9AA1A8}"
+    },
+    {
+      "name": "Runs Table",
+      "kind": "custom",
+      "description": "Agent 运行记录表（ADMIN）：浅灰表头、发丝行线、悬停转浅灰、选中洗蓝底；ID/耗时等宽数据，状态列复用灯语法。",
+      "html": "<table class='ds-table'><thead><tr><th>Run ID</th><th>状态</th><th>总耗时</th></tr></thead><tbody><tr class='ds-sel'><td class='ds-mono'>RUN-20260929-0031</td><td><span class='ds-runst ds-ok'><span class='ds-dot'></span>SUCCESS</span></td><td class='ds-mono'>6.2s</td></tr><tr><td class='ds-mono'>RUN-20260929-0030</td><td><span class='ds-runst ds-wait'><span class='ds-dot ds-dot-call'></span>WAITING_CONFIRM</span></td><td class='ds-mono'>—</td></tr><tr><td class='ds-mono'>RUN-20260929-0028</td><td><span class='ds-runst ds-fail'><span class='ds-dot'></span>FAILED · 工具超时</span></td><td class='ds-mono'>3.1s</td></tr></tbody></table>",
+      "css": ".ds-table{border-collapse:collapse;width:100%;font:400 13px 'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif;color:#1F2328}.ds-table th{text-align:left;font:600 12px 'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif;color:#6B7178;padding:9px 14px;border-bottom:1px solid #E2E4E1;background:#FAFBFA;white-space:nowrap}.ds-table td{padding:10px 14px;border-bottom:1px solid #E2E4E1;white-space:nowrap}.ds-table tr:last-child td{border-bottom:none}.ds-table tbody tr:hover td{background:#FAFBFA}.ds-table tr.ds-sel td{background:#F0F4F9}.ds-mono{font:400 12px Consolas,'Courier New',monospace;color:#5A6167}.ds-runst{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#5A6167}.ds-runst.ds-ok{color:#1F7A4D}.ds-runst.ds-wait{color:#8F5F12;font-weight:600}.ds-runst.ds-fail{color:#C13A2B;font-weight:600}.ds-dot{width:8px;height:8px;border-radius:50%;background:currentColor}.ds-dot-call{background:#B7791F;animation:ds-call3 1.6s ease-in-out infinite}@keyframes ds-call3{0%,100%{box-shadow:0 0 0 0 rgba(183,121,31,.28)}50%{box-shadow:0 0 0 4px rgba(183,121,31,.12)}}@media (prefers-reduced-motion:reduce){.ds-dot-call{animation:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "安灯看板",
+    "overview": "这套界面是一条处理线上的安灯板（Toyota andon）：Agent 是产线上的机器，每走一步亮一盏灯；需要人工判断时拉灯呼叫（琥珀），处理人拍板后机器继续（绿灯逐一点亮）。整个系统的视觉纪律都从这个隐喻推导——状态永远可见、语义色只说状态、其余一切保持车间的冷静底色。正式感来自纪律而不是装饰：网格、发丝线、等宽数据、零拟物零霓虹。\n\n落地形态是冷调浅灰的\"车间光\"地面（#F3F4F2）上浮着白色面板，全部分隔靠 1px 发丝线（#E2E4E1）而非阴影；近黑墨色文字（#1F2328）分三级递减。语义灯家族（工单线：运转绿 / 呼叫琥珀 / 故障红；审核线新增：动作橙 / 复核灰 / 执行蓝灯）只出现在状态位上；主操作是唯一的彩色交互色——深钢蓝（#24518F）。字体全部使用中文系统字栈（Segoe UI → 微软雅黑 → 苹方），无任何外部依赖，离线可开；机器事实（ID、时间戳、耗时、参数、tokens）一律 Consolas 等宽。\n\n老师审核工作台（第二个已建 surface）把这套纪律带进审核场景，并立起两条新法则。其一是行动语义「橙色=等我操作」：材料缺口、待老师复核这类\"轮到你拍板\"的状态一律点亮橙色，主按钮随业务状态出现——老师 5 秒内能回答\"我该点哪个按钮\"。其二是主工作面零终端元素：第一层业务事实（谁申请的、交了什么）与第二层 AI 判断（逐规则结论、问题清单）留在主面，第三层技术执行（Run/Node/Tool/Token）全部收进 440px 执行详情抽屉——一键可得，但不打扰。",
+    "keyCharacteristics": [
+      "状态灯是 8px 小圆灯（品牌标内 5–7px），不是发光球；灯永远与状态文字同行出现，并带 aria-label。",
+      "安灯条永远可见（工单台）：整单 Agent 进度是面板顶部一条四段灯条，不是埋在内容里的徽标。",
+      "动效纪律是「每屏至多一个运动信号」：进行中 = 1.1s 硬闪烁（颜色跟随执行者——审核台蓝灯 = AI 正在跑，工单台绿灯 = 流程推进）；琥珀呼吸光环只属于工单线的呼叫灯，审核台无使用位（待复核态用常亮橙灯）。",
+      "「橙色=等我操作」：橙灯 / 橙药丸 / 橙横幅 / 橙色主按钮这个家族只说一件事——轮到老师拍板；蓝 = AI 进行中，灰空心 = 学生侧等待，绿/红 = 终态。",
+      "主工作面零终端元素：技术执行信息（Run/Node/Tool/Token、耗时、JSON 参数）只从「查看执行详情」抽屉进入；旧深色 runlog 条不回流新主界面。",
+      "等宽字体只说机器的话：Run/Ticket 编号、时刻、毫秒耗时、JSON 参数、token 计数，以及规则证据摘录（机器采样的原文）。",
+      "零渐变按钮、零投影按钮、零外部字体/图标库；图标为 1.7–1.8px 描边的线性 SVG（12–17px）。",
+      "keyframes 只服务灯信号；过渡（0.15–0.2s）只服务空间层级（树/规则行 chevron 旋转、抽屉滑入、遮罩淡入），其余状态变化瞬时完成，全部尊重 prefers-reduced-motion。"
+    ],
+    "rules": [
+      {
+        "name": "语义灯不入装饰法则",
+        "body": "绿/琥珀/红/橙/灰/蓝（灯）只允许出现在状态位：灯、状态药丸、状态横幅、状态文字、类型标、日志结果色。凡不表达运行状态的场合一律回到车间灰系。",
+        "section": "colors"
+      },
+      {
+        "name": "钢蓝唯一话事权",
+        "body": "#24518F 是系统里唯一的交互色，垄断\"可点击/已选中/焦点\"三种含义；唯一被批准的状态兼任是审核线\"蓝灯 = AI 进行中\"。其他任何色相不得承担交互暗示，语义灯也不得做成按钮。",
+        "section": "colors"
+      },
+      {
+        "name": "「橙色=等我操作」法则",
+        "body": "橙灯亮起的地方就是轮到老师拍板的地方：待老师复核/需补材料状态、橙结论横幅、确认退回补材料的橙色主按钮。蓝 = AI 进行中，灰空心 = 学生侧等待，绿/红 = 终态——按钮颜色跟着行动语义走：前进类动作（确认/同意）永远钢蓝，退回类动作（退回补材料）用橙。",
+        "section": "colors"
+      },
+      {
+        "name": "墨分三级",
+        "body": "文字只用 #1F2328 / #5A6167 / #6B7178 三级，靠层级不靠颜色花样；更浅的灰只允许出现在禁用态（#5F676F / #70777E）。",
+        "section": "colors"
+      },
+      {
+        "name": "系统字栈铁律",
+        "body": "只用操作系统自带中文字体，禁止引入任何 Webfont 或字体文件——这套界面必须离线双开即用。",
+        "section": "typography"
+      },
+      {
+        "name": "等宽只说机器的话",
+        "body": "Consolas 专属机器事实（编号、时刻、耗时、参数、tokens）与机器采样的原文证据（规则证据摘录）；人写的句子（申请说明、状态名、审核结论）一律回到系统字栈。",
+        "section": "typography"
+      },
+      {
+        "name": "600 封顶、19px 封顶",
+        "body": "字重最高 600，字号最高 19px，标签下限 12px；需要更强层级时靠墨色与位置，不靠加粗放大。",
+        "section": "typography"
+      },
+      {
+        "name": "平面向发丝线借深度法则",
+        "body": "常规面板不做抬升，hover 不加投影；需要分区时画 1px 线或换次级底，需要强调选中时才允许环境影出现。投影只升级一次：浮层（抽屉/预览）配浮层影 + 遮罩墨纱。",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do 用状态灯表达一切运行状态：8px 圆灯 + 语义色 + 同行文字 + aria-label；拿不准状态语义时回看两套语法（工单线：绿运转 / 琥珀呼叫 / 红故障 / 空心未动；审核线：蓝 = AI 进行中、橙 = 等我操作、灰 = 需人工复核、空心 = 学生侧等待、绿/红 = 终态）。",
+      "Do 让整单 Agent 进度以安灯条形式常驻工单台面板顶部——状态永远可见，不要埋进内容里。",
+      "Do 记住行动语义「橙色=等我操作」：需要老师拍板的动作（确认并退回补材料）用橙色主按钮 #C2610E（hover #A34E08）；确认/同意类前进动作永远钢蓝 #24518F。",
+      "Do 把技术执行信息（Run/Node/Tool/Token、耗时、JSON 参数）收进 440px 执行详情抽屉，主界面入口只用 12px 钢蓝\"查看执行详情\"链接钮；抽屉第一行放自我降级说明。",
+      "Do 机器事实（编号、时刻、耗时、参数、tokens、证据摘录）一律 Consolas 等宽（11–12px），人工叙述用系统字栈。",
+      "Do 分隔靠 1px 发丝线与次级灰底；交互与选中只用深钢蓝（#24518F，hover #1D4376），焦点给足 2px 描边。",
+      "Do 控件高度走 28/30/32/36/38/40px 阶梯，间距走 4/8/12/16/20px 节奏。",
+      "Do 为所有动效保留 prefers-reduced-motion 降级（灯停闪、光晕停呼吸、抽屉瞬时到位）。",
+      "Do 显式标注演示数据（演示账号、\"静态交互图 · 演示数据\"水印），原型与真实系统不混淆。"
+    ],
+    "donts": [
+      "Don't 把语义灯（绿/琥珀/红/橙/灰/蓝）用于纯装饰或非状态场景；语义灯不做成按钮，彩色不进非语义区域。",
+      "Don't 给同一屏第二个运动信号——每屏至多一处闪烁或呼吸；审核台不使用琥珀呼吸光环（待复核 = 常亮橙灯）；绿/红灯不带光。",
+      "Don't 在老师主工作面放终端元素：深色 runlog、NODE/TOOL/AUDIT/GATE 标签、token 计数只存在于执行详情抽屉与 ADMIN 运行记录页。",
+      "Don't 引入外部字体、图标库或 emoji 图标；图标只用 12–17px、1.7–2px 描边的内联线性 SVG。",
+      "Don't 超过 19px 字号或 600 字重，标签不低于 12px；不要海报式大标题层级。",
+      "Don't 用硬偏移投影或 hover 抬升表达可点；深度只来自发丝线、次级灰和选中态的极淡环境影——投影只属于抽屉/预览浮层。",
+      "Don't 把印章赭 #D9877C 用在材料预览占位组件之外——它是演示占位章的局部色，不是系统色。",
+      "Don't 复用评审导航的深灰胶囊浮层样式——那是评审工具的铬件，不是产品语言。"
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+# ===== Java（backend-java）=====
+backend-java/target/
+**/target/
+*.class
+*.jar
+!**/maven-wrapper.jar
+hs_err_*.log
+replay_pid*.log
+
+# ===== 前端（frontend / Node）=====
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===== Python（agent-service）=====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# Chroma 持久化数据与本地生成物（源文件在 knowledge-base/，正常提交）
+agent-service/data/
+agent-service/**/chroma/
+*.sqlite3
+*.db
+
+# ===== 环境与密钥（对外仓库严禁提交）=====
+.env
+.env.*
+*.pem
+*.key
+application-local.yml
+application-local.properties
+secrets/
+
+# ===== IDE / 编辑器 =====
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# ===== 设计工具运行时产物（正式设计资产在 产品文档/）=====
+.impeccable/
+
+# ===== 日志与临时文件 =====
+*.log
+logs/
+tmp/
+.temp/
+
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db
+Desktop.ini
