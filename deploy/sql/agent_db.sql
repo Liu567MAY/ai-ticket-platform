@@ -6,6 +6,7 @@
 --      均为逻辑引用，只保存 ID
 --   2. 业务数据一律在 business_db，本库只存 Agent 自身运行数据
 --   3. JSON 摘要列（args/result/summary）超长截断，不存全量 State
+--   4. 约束规模（以本文件实际为准）：物理外键 0 条，UNIQUE 约束 3 组
 -- ============================================================
 
 CREATE DATABASE IF NOT EXISTS agent_db

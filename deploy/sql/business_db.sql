@@ -5,6 +5,7 @@
 --   1. 物理外键仅存在于业务域内部，全部 ON DELETE RESTRICT
 --   2. 枚举使用 VARCHAR + 应用层校验；布尔使用 TINYINT(1)
 --   3. 文件本体不存库，material 只保存元数据与存储路径
+--   4. 约束规模（以本文件实际为准）：物理外键 20 条（全部 RESTRICT/RESTRICT），UNIQUE 约束 7 组
 -- ============================================================
 
 CREATE DATABASE IF NOT EXISTS business_db
