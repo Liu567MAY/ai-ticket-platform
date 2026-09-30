@@ -99,7 +99,7 @@ ai-ticket-platform/
 │   ├── DESIGN.md           # 设计系统规范
 │   ├── design.json         # 设计 token sidecar
 │   └── ui-mockup/          # 静态交互原型 + 评审记录
-├── deploy/                 # Docker / 部署配置（后期）
+├── deploy/                 # 部署配置 + 数据库脚本（deploy/sql/：business_db / agent_db / seed）
 └── README.md
 ```
 
