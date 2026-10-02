@@ -5,7 +5,7 @@
 --   1. 物理外键仅存在于业务域内部，全部 ON DELETE RESTRICT
 --   2. 枚举使用 VARCHAR + 应用层校验；布尔使用 TINYINT(1)
 --   3. 文件本体不存库，material 只保存元数据与存储路径
---   4. 约束规模（以本文件实际为准）：物理外键 20 条（全部 RESTRICT/RESTRICT），UNIQUE 约束 7 组
+--   4. 约束规模（以本文件实际为准）：物理外键 20 条（全部 RESTRICT/RESTRICT），UNIQUE 约束 8 组
 -- ============================================================
 
 CREATE DATABASE IF NOT EXISTS business_db
@@ -88,7 +88,7 @@ CREATE TABLE application (
   course_code   VARCHAR(30)  NULL COMMENT '课程代码（可空，漏填即审核点）',
   credit_amount DECIMAL(4,1) NOT NULL COMMENT '申请学分',
   reason        TEXT         NOT NULL COMMENT '申请说明',
-  status        VARCHAR(30)  NOT NULL DEFAULT 'SUBMITTED' COMMENT '业务状态：SUBMITTED/AUDITING/NEED_SUPPLEMENT/WAIT_TEACHER_APPROVAL/APPROVED/REJECTED',
+  status        VARCHAR(30)  NOT NULL DEFAULT 'DRAFT' COMMENT '业务状态：DRAFT/SUBMITTED/AUDITING/NEED_SUPPLEMENT/WAIT_TEACHER_APPROVAL/APPROVED/REJECTED',
   current_round INT          NOT NULL DEFAULT 1 COMMENT '当前审核轮次（退回补件事务内 +1）',
   decided_at    DATETIME     NULL COMMENT '进入 APPROVED/REJECTED 终态时间',
   created_at    DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '提交时间',
@@ -194,7 +194,7 @@ CREATE TABLE supplement_task (
   audit_result_id    BIGINT       NOT NULL COMMENT '来源审核结果',
   student_id         BIGINT       NOT NULL COMMENT '需补材料的学生 user.id',
   round              INT          NOT NULL COMMENT '本任务开启的补件轮次',
-  status             VARCHAR(20)  NOT NULL DEFAULT 'PENDING' COMMENT 'PENDING/SUBMITTED/CANCELLED',
+  status             VARCHAR(20)  NOT NULL DEFAULT 'PENDING' COMMENT 'PENDING/COMPLETED/CANCELLED',
   reason             VARCHAR(500) NOT NULL COMMENT '退回原因概述',
   required_materials JSON         NOT NULL COMMENT '补充清单 [{material_type, requirement}]',
   created_by         BIGINT       NOT NULL COMMENT '确认退回的老师 user.id',
@@ -202,6 +202,7 @@ CREATE TABLE supplement_task (
   created_at         DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   completed_at       DATETIME     NULL COMMENT '学生重交材料时间',
   PRIMARY KEY (id),
+  UNIQUE KEY uk_sup_audit_result (audit_result_id),
   KEY idx_sup_app (application_id),
   KEY idx_sup_student_status (student_id, status),
   CONSTRAINT fk_sup_app FOREIGN KEY (application_id) REFERENCES application (id)

@@ -100,6 +100,7 @@ DRAFT
 - 提交校验细则：必传材料类型集合的来源（一期固定清单 vs 知识库规则推导）
 - Review 视图响应结构
 
-## 11. 数据库同步待办（已确认，尚未同步 DDL）
+## 11. 数据库同步（已落地，2026-09-30）
 
-- application.status 枚举新增 **DRAFT**（当前 DDL 注释枚举不含 DRAFT；POST 创建时显式置 DRAFT）
+- application.status 枚举已含 **DRAFT**，列默认值已由 'SUBMITTED' 改为 **'DRAFT'**（与"创建即草稿"语义一致；服务层仍显式写状态）
+- 已通过 ALTER 同步至本机 business_db，business_db.sql 建库脚本同步更新

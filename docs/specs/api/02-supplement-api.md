@@ -89,9 +89,8 @@
 - supplement 域权限码（复用 material:upload 还是新增）
 - 非可上传状态（SUBMITTED / AUDITING 等）下上传接口的开放性
 
-## 9. 数据库同步待办（已确认，尚未同步 DDL）
+## 9. 数据库同步（已落地，2026-09-30）
 
-- supplement_task.status 枚举：DDL 注释当前为 PENDING/SUBMITTED/CANCELLED → 确认改为 **PENDING/COMPLETED/CANCELLED**
-- supplement_task 新增 **UNIQUE(audit_result_id)**（一次正式审核结果最多产生一个补件任务）
-
-以上两处统一在 API Spec 阶段结束后做数据库小修正。
+- supplement_task.status 枚举确认为 **PENDING / COMPLETED / CANCELLED**（DDL 注释已同步）
+- supplement_task 已新增 **UNIQUE(audit_result_id)**（一次正式审核结果最多产生一个补件任务，兼作 return_for_supplement 的数据库级幂等保护）
+- 已通过 ALTER 同步至本机 business_db，business_db.sql 建库脚本同步更新
