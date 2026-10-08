@@ -1,0 +1,27 @@
+# ============================================================
+# application-example.yml —— 环境变量注入示例（模板，勿直接作为运行配置）
+#
+# application.yml 中数据源三项均来自环境变量，本文件展示各变量的取值方式。
+# 真实口令只保存在本机环境变量中，不写入任何仓库文件。
+#
+# Git Bash / Linux：
+#   export DB_URL='jdbc:mysql://127.0.0.1:3306/business_db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true'
+#   export DB_USERNAME=business_user
+#   export DB_PASSWORD='<你的口令>'
+#   java -jar backend-java/target/backend-java-0.0.1-SNAPSHOT.jar
+#
+# PowerShell：
+#   $env:DB_URL = "jdbc:mysql://127.0.0.1:3306/business_db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true"
+#   $env:DB_USERNAME = "business_user"
+#   $env:DB_PASSWORD = "<你的口令>"
+#   java -jar backend-java/target/backend-java-0.0.1-SNAPSHOT.jar
+# ============================================================
+
+spring:
+  datasource:
+    # DB_URL：完整 JDBC URL（库固定为 business_db，禁止指向 agent_db）
+    url: jdbc:mysql://127.0.0.1:3306/business_db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    # DB_USERNAME：业务库账号（与 deploy/sql 建库脚本配套，授权仅 business_db.*）
+    username: business_user
+    # DB_PASSWORD：业务库口令（此处仅占位，禁止提交真实口令）
+    password: <DB_PASSWORD>

@@ -1,0 +1,17 @@
+# ============================================================
+# 周期 0 基础配置（backend-java）
+# ============================================================
+server:
+  port: 8080
+
+spring:
+  datasource:
+    # 三项一律经环境变量注入，禁止任何默认口令落入仓库；
+    # 取值方式与启动命令见同目录 application-example.yml
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    hikari:
+      # 健康检查需快速失败（默认 30s 过长）；本地业务查询也不应超过该上限
+      connection-timeout: 5000
+      pool-name: business-db-pool
