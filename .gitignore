@@ -35,6 +35,7 @@ agent-service/**/chroma/
 # ===== 环境与密钥（对外仓库严禁提交）=====
 .env
 .env.*
+!.env.example
 *.pem
 *.key
 application-local.yml

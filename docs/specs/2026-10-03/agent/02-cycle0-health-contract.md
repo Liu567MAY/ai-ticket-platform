@@ -16,12 +16,12 @@
 | 场景 | HTTP 状态码 | 响应体 |
 |---|---|---|
 | Redis PING 成功 | 200 | `{"code":0,"message":"ok"}` |
-| Redis PING 失败（连接失败 / 超时 / 认证失败等任何异常） | 200 | `{"code":1,"message":"redis unavailable"}` |
+| Redis PING 失败（连接失败 / 超时 / 认证失败等任何异常） | 503 | `{"code":1,"message":"redis unavailable"}` |
 
 - 成功响应体**严格只有** `code`、`message` 两个字段：由 Pydantic `response_model`（`HealthResponse`）强约束，序列化不会带出多余字段。
 - 失败响应体与成功同构（同两字段），`code=1` 表达不可用。
 
-**决策 D-04（HTTP 状态码恒为 200）**：任务的契约面是响应体（`code` 字段表达语义），故失败时不返回 503。调用方以 `code` 字段判定健康状态。若后续 Java 探活 / 容器编排依赖非 200 判失败，属联调契约变更，走周期报告提出。
+**决策 D-04（已由周期 0 总体验收推翻并统一）**：原方案为 HTTP 恒 200、语义仅由 code 表达；总体验收裁决三端统一契约——**依赖不可用返回 HTTP 503**（与 backend-java 一致），成功 200。调用方可同时依赖 HTTP 状态码与 code 字段。代码已同步（app/api/internal.py）。
 
 ## 3. Redis 探测设计
 
